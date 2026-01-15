@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    min-height: 100vh; 
+    background-color: #F9F9F9;
+    place-items:center ;
+}
+.box{
+    border: solid 1px black;
+    display: grid;
+    width: 60%;
+    gap: 2em;
+    padding: 1em;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:
+    "box1 box1 box2 box3"
+    "box4 box5 box5 box3"
+    ;
+}
+.pp{
+    width: 40px;
+     height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.mini{
+    border: 1px solid transparent;
+     box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 2rem;
+    overflow: hidden;
+    gap: 1.2rem;
+}
+
+.m1{
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 81%);
+    
+}
+.m1 h2{
+    color: hsl(260, 100%, 95%);
+}
+.m2{
+    background-color    :white;
+    color: hsl(217, 19%, 35%);
+}
+.m4{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+.m5{
+    color:hsl(224, 10%, 45%);
+}
+.m5 h2{
+    color: hsl(219, 29%, 14%);
+}
+.m3{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 81%);
+}
+p:first-child{
+    font-size: 1.1em;
+}
+ .name {
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+
+    .verified {
+      opacity: 0.5;
+      font-size: 0.9rem;
+    }
+     .header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    .name,.verified{
+        margin: 5px;
+    }
+    .user {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+@media(max-width:56em){
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        gap: 1.5rem;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        ;
+    }
+}
+@media(max-width:42em){
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        gap: 1.5rem;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        ;
+    }
+}
